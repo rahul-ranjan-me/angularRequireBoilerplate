@@ -1,0 +1,29 @@
+{
+  "name": "angularrequire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "requirejs": "^2.2.0",
+    "serve-static": "^1.10.2",
+    "util": "^0.10.3"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-cookie": "^4.1.0",
+    "angular-resource": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "ngprogress-lite": "^1.0.8",
+    "text": "^0.1.0"
+  }
+}
