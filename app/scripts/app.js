@@ -1,5 +1,4 @@
-define("app", 
-	[
+define([
 		"angular", 
 		"ngResource",
 		"ngRoute",
@@ -7,9 +6,9 @@ define("app",
 		"controllers/PhoneListCtrl",
 		"controllers/PhoneDetailCtrl",
 
-		"text!partials/dashboard.html",
-		"text!partials/listing.html",
-		"text!partials/detail.html"
+		"text!../templates/dashboard.html",
+		"text!../templates/listing.html",
+		"text!../templates/detail.html"
 	], 
 	function(
 		angular,
@@ -43,6 +42,7 @@ define("app",
 		}]);
 
 	    app.init = function () {
+	    	console.log('here');
 			angular.bootstrap(document, ['likeastore']);
 		};
 
