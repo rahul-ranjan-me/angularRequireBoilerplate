@@ -4,7 +4,7 @@ define([],
 	    function PhoneListCtrl($scope){
 
 	    	this.$scope = $scope;
-	    	$scope.toPrint = "This is a listing page here";
+	    	$scope.toPrint = "This is a listing page here there";
 
 	    }
 

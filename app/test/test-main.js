@@ -6,16 +6,11 @@ for (var file in window.__karma__.files) {
 
 require.config({
   // Karma serves files under /base, which is the basePath from your config file
-  baseUrl: '/base/app/scripts',
+  baseUrl: '/base/scripts',
 
   paths: {
-    'angular' : 'libs/angular',
-    'text' : '../node_modules/text/text',
-    'ngRoute' : '../node_modules/angular-route/angular-route',
-    'ngResource': '../node_modules/angular-resource/angular-resource',
-    'ngCookies': '../node_modules/angular-cookies/angular-cookies',
-    'ngProgressLite': '../node_modules/ngprogress-lite/ngprogress-lite',
-    'angularMocks': 'libs/angular-mocks'
+    'angular' : '../test/libs/angular',
+    'angularMocks': '../test/libs/angular-mocks'
   },
   
   shim: {
