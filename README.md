@@ -15,3 +15,4 @@ Setting up angular application with requireJS
 * Watch conofigured
 * Test cases boilerplate configure with karma configuration
 * Using require JS build for Javascript 
+* Generate coverage report in coverage folder when grunt karma runs
