@@ -5,7 +5,7 @@ Setting up angular application with requireJS
 * Clone the respository on your local
 * navigate to the folder in command prompt
 * run npm install
-* run npm dev
+* run npm start
 * hit application on http://localhost:3000
 
 ## Features
