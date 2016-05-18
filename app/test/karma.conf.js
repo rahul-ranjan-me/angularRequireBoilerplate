@@ -9,8 +9,14 @@ module.exports = function(config) {
       'test/test-main.js'
     ],
     exclude: [],
-    preprocessors: {},
-    reporters: ['progress'],
+    preprocessors: {
+      'scripts/**/*.js' : ['coverage']
+    },
+    reporters: ['progress', 'coverage'],
+    coverageReporter: {
+      type : 'html',
+      dir : 'coverage/'
+    },
     port: 9876,
     colors: true,
     autoWatch: true,
