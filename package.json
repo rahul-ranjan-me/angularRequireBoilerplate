@@ -42,6 +42,6 @@
     "angular-resource": "^1.5.5",
     "angular-route": "^1.5.5",
     "ngprogress-lite": "^1.0.8",
-    "text": "^0.1.0"
+    "text": "github:requirejs/text"
   }
 }
