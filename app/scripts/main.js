@@ -2,25 +2,10 @@ require.config({
 	paths: {
 		'angular' : '../../node_modules/angular/angular',
 		'text' : '../../node_modules/text/text',
-		'ngRoute' : '../../node_modules/angular-route/angular-route',
-		'ngResource': '../../node_modules/angular-resource/angular-resource',
-		'ngCookies': '../../node_modules/angular-cookies/angular-cookies',
-		'ngProgressLite': '../../node_modules/ngprogress-lite/ngprogress-lite'
+		'ngRoute' : '../../node_modules/angular-route/angular-route'
 	},
 	shim: {
-		ngResource: {
-			deps: ['angular'],
-			exports: 'angular'
-		},
 		ngRoute: {
-			deps: ['angular'],
-			exports: 'angular'
-		},
-		ngCookies: {
-			deps: ['angular'],
-			exports: 'angular'
-		},
-		ngProgress: {
 			deps: ['angular'],
 			exports: 'angular'
 		},

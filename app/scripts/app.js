@@ -1,6 +1,5 @@
 define([
 		"angular", 
-		"ngResource",
 		"ngRoute",
 
 		"controllers/PhoneListCtrl",
@@ -12,7 +11,6 @@ define([
 	], 
 	function(
 		angular,
-		ngResource,
 		ngRoute,
 
 		phoneListCtrl,
@@ -23,7 +21,7 @@ define([
 		details
 	) {
 
-	    var app = angular.module("likeastore", ["ngResource", "ngRoute"] )
+	    var app = angular.module("likeastore", ["ngRoute"] )
 	    	.controller('PhoneListCtrl', phoneListCtrl)
 			.controller('PhoneDetailCtrl', PhoneDetailCtrl)
 			.config(['$routeProvider', function($routeProvider) {
