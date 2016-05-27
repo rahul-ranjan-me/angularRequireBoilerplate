@@ -1,4 +1,7 @@
 <div>
-	<p>Welcome to Angular Boilerplate. This is <strong>{{pageName}}</strong></p>
-	<p><a href="#/innerPage">Go to next page</a></p>
+	<header-directive headertext="Angular Boilerplate Homepage"></header-directive>
+	<div class="content">
+		<p>Welcome to {{homepageDetail.projectName}}. This is <strong>{{homepageDetail.pageName}}</strong></p>
+		<p><a href="#/innerPage">Go to next page</a></p>
+	</div>
 </div>

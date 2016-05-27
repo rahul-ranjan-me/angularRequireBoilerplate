@@ -7,13 +7,13 @@ define([],
 	    	this.$scope = $scope;
 	    	$scope.pageName = "Innerpage";
 
-	    	$scope.changeName = function(val){
-	    		this.changePrint(val);
+	    	$scope.goHomepage = function(val){
+	    		this.navigate('/');
 	    	}.bind(this);
 	    }
 
-	    PhoneDetailCtrl.prototype.changePrint = function(val){
-	    	this.$scope.toPrint = "China";
+	    PhoneDetailCtrl.prototype.navigate = function(val){
+	    	window.location.hash = val;
 	    };
 
 	    return PhoneDetailCtrl;
