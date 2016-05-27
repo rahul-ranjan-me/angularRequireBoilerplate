@@ -13,7 +13,7 @@ define([],
 	    }
 
 	    PhoneDetailCtrl.prototype.navigate = function(val){
-	    	$scope.hash = val;
+	    	this.$scope.hash = val;
 	    	window.location.hash = val;
 	    };
 
