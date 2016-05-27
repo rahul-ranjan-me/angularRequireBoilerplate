@@ -1,5 +1,6 @@
 define([], 
 	function() {
+		
 	    function HomeCtrl($scope){
 
 	    	this.$scope = $scope;

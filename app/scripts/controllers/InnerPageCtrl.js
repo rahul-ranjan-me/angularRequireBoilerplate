@@ -1,10 +1,11 @@
 define([], 
 	function(
 	) {
+
 	    function PhoneDetailCtrl($scope){
 
 	    	this.$scope = $scope;
-	    	$scope.toPrint = "Rahul";
+	    	$scope.pageName = "Innerpage";
 
 	    	$scope.changeName = function(val){
 	    		this.changePrint(val);
@@ -16,5 +17,6 @@ define([],
 	    };
 
 	    return PhoneDetailCtrl;
+	    
 	}
 );
