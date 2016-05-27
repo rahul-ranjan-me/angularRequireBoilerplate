@@ -2,46 +2,43 @@ define([
 		"angular", 
 		"ngRoute",
 
-		"controllers/PhoneListCtrl",
-		"controllers/PhoneDetailCtrl",
+		"controllers/HomeCtrl",
+		"controllers/InnerPageCtrl",
 
-		"text!../templates/dashboard.html",
-		"text!../templates/listing.html",
-		"text!../templates/detail.html"
+		"text!../templates/homeTemplate.html",
+		"text!../templates/innerPage.html"
 	], 
 	function(
 		angular,
 		ngRoute,
 
-		phoneListCtrl,
-		PhoneDetailCtrl,
+		HomeCtrl,
+		InnerPageCtrl,
 
-		dashboard,
-		listing,
-		details
+		homeTemplate,
+		innerPage
 	) {
 
-	    var app = angular.module("likeastore", ["ngRoute"] )
-	    	.controller('PhoneListCtrl', phoneListCtrl)
-			.controller('PhoneDetailCtrl', PhoneDetailCtrl)
+	    var app = angular.module("projectModule", ["ngRoute"] )
+	    	.controller('HomeCtrl', HomeCtrl)
+			.controller('InnerPageCtrl', InnerPageCtrl)
 			.config(['$routeProvider', function($routeProvider) {
 					$routeProvider.
-						when('/phones', {
-							template: listing,
-							controller: 'PhoneListCtrl'
+						when('/', {
+							template: homeTemplate,
+							controller: 'HomeCtrl'
 						}).
-						when('/phones/:phoneId', {
-							template: details,
-							controller: 'PhoneDetailCtrl'
+						when('/innerPage', {
+							template: innerPage,
+							controller: 'InnerPageCtrl'
 						}).
 						otherwise({
-							redirectTo: '/phones'
+							redirectTo: '/'
 						});
 		}]);
 
 	    app.init = function () {
-	    	console.log('here');
-			angular.bootstrap(document, ['likeastore']);
+	    	angular.bootstrap(document, ['projectModule']);
 		};
 
 	    return app;
