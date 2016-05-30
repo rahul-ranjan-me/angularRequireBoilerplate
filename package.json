@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "angular-mocks": "^1.5.5",
-    "connect": "^3.4.1",
+    "express": "^4.13.4",
     "grunt": "^1.0.1",
     "grunt-concat-css": "^0.3.1",
     "grunt-contrib-clean": "^1.0.0",
@@ -31,9 +31,7 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-requirejs": "^1.0.0",
     "phantomjs-prebuilt": "^2.1.7",
-    "requirejs": "^2.2.0",
-    "serve-static": "^1.10.2",
-    "util": "^0.10.3"
+    "requirejs": "^2.2.0"
   },
   "dependencies": {
     "angular": "^1.5.5",
