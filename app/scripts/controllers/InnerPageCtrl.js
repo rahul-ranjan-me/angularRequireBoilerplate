@@ -1,5 +1,8 @@
-define([], 
+define([
+		'../logger'
+	], 
 	function(
+		logger
 	) {
 
 	    function PhoneDetailCtrl($scope){
@@ -13,6 +16,7 @@ define([],
 	    }
 
 	    PhoneDetailCtrl.prototype.navigate = function(val){
+	    	logger.log('User navigating to homepage');
 	    	this.$scope.hash = val;
 	    	window.location.hash = val;
 	    };

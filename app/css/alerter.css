@@ -1,0 +1,128 @@
+html, body{
+	height: 100%;
+	font-family: arial;
+	font-size: 12px;
+}
+
+#alerter .alert-bg{
+	background:#333;
+	opacity: .7;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+#alerter .ui-alert{
+	z-index: 1000;
+    position: absolute;
+    background: #fff;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#alerter .ui-alert .head{
+	padding:0 10px;
+    background: #0c5d91;
+    color:#fff;
+}
+
+
+#alerter .ui-alert .body{
+	padding: 10px;
+}
+
+#alerter .ui-alert .body p{
+	font-size: 12px;
+}
+
+#alerter .ui-alert .foot{
+	border-top: 1px solid #ccc;
+	padding: 10px;
+}
+
+#alerter .ui-alert .foot button{
+	background: #136594;
+    padding: 5px;
+    border:none;
+    margin-right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    color:#fff;
+    transition: background-color 0.5s ease;
+}
+
+#alerter .ui-alert .foot button:hover{
+	background: #399BD4;
+}
+
+#alerter .ui-alert .foot .buttons{
+	float: right;
+}
+
+#alerter .ui-alert .foot .buttons:after,
+#alerter .ui-alert .foot:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+#alerter .ui-alert span.closeAlert{
+	border-radius: 11px;
+    background: #333;
+    width: 18px;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    height: 18px;
+    vertical-align: middle;
+    line-height: 18px;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    opacity: .5
+}
+
+#alerter .ui-alert h4{
+	float: left;
+}
+
+#alerter .ico-alert{
+	float: left;
+	display: block;
+	position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-weight: 400;
+    line-height: 1;
+    font-size: 48px;
+    margin-left: 10px;
+    margin-right: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#alerter .ico-alert:before{
+	content: "\e101";
+}
+
+#alerter .ico-alert.ico-alert-warn{
+	color:#926805;
+}
+
+#alerter .ico-alert.ico-alert-error{
+	color:#ff0000;
+}
+
+#alerter .ico-alert.ico-alert-alert{
+	color:#ddd;
+}
+
+#alerter .alerter-content{
+	float: left;
+}
