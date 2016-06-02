@@ -1,11 +1,3 @@
-*{
-	font-family: arial;
-	font-size: 14px;
-	color:#333;
-	margin:0;
-	padding: 0; 
-}
-
 header{
 	padding: 20px;
     line-height: 40px;
@@ -20,17 +12,4 @@ header{
 	margin:0 auto;
 	border:1px solid #eee;
 	padding: 20px;
-}
-
-.content p{
-	margin-bottom: 10px;
-}
-
-.content p a{
-	color:#00B6FF;
-	text-decoration: none;
-}
-
-.content p a:hover{
-	text-decoration: overline;
 }
